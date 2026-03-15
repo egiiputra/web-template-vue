@@ -4,14 +4,6 @@ export const siteConfig = {
     tagline: 'Building amazing products',
     logo: '/logo.svg',
   },
-  colors: {
-    primary: '#3B82F6',
-    primaryForeground: '#FFFFFF',
-    secondary: '#64748B',
-    accent: '#10B981',
-    background: '#FFFFFF',
-    foreground: '#1E293B',
-  },
   contact: {
     email: 'hello@example.com',
     phone: '+1 234 567 890',
