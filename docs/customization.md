@@ -1,10 +1,13 @@
 # Customization Guide
 
-All site customization is centralized in `src/config/site.ts`. This file controls branding, colors, navigation, footer, and contact information.
+This template separates configuration into two files:
 
-## Configuration File
+- **`src/config/site.ts`** - Content: branding, navigation, footer, contact info
+- **`tailwind.config.js`** - Styling: colors, fonts, spacing
 
-Open `src/config/site.ts`:
+## Site Content (`src/config/site.ts`)
+
+This file controls branding, navigation, footer, and contact information:
 
 ```typescript
 export const siteConfig = {
@@ -13,15 +16,15 @@ export const siteConfig = {
     tagline: 'Building amazing products',
     logo: '/logo.svg',
   },
-  colors: {
-    primary: '#3B82F6',
-    primaryForeground: '#FFFFFF',
-    secondary: '#64748B',
-    accent: '#10B981',
-    background: '#FFFFFF',
-    foreground: '#1E293B',
+  contact: {
+    // ...
   },
-  // ... more options
+  nav: {
+    // ...
+  },
+  footer: {
+    // ...
+  }
 }
 ```
 

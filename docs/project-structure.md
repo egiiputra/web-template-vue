@@ -45,14 +45,14 @@ web-template-vue/
 
 | File | Purpose |
 |------|---------|
-| `src/config/site.ts` | Central configuration for branding, colors, nav, etc. |
-| `src/assets/css/main.css` | Global styles and CSS variables |
+| `src/config/site.ts` | Content configuration: branding, nav, footer, contact |
+| `tailwind.config.js` | Styling: colors, fonts, spacing |
 | `src/components/layout/` | Header and footer components |
 | `src/pages/` | Route pages |
-| `tailwind.config.js` | Tailwind CSS configuration |
 
 ## Configuration Flow
 
-1. Edit `src/config/site.ts` to change content
-2. CSS variables in `src/assets/css/main.css` sync with config
-3. Components automatically use the config via `useSiteConfig()` or direct import
+1. Edit `src/config/site.ts` for content (branding, nav, footer, contact)
+2. Edit `tailwind.config.js` for colors and styling
+3. Components use Tailwind classes for colors (`bg-primary`, `text-primary`)
+4. Components use `siteConfig` for content via `useSiteConfig()` or direct import
